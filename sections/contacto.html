@@ -8,61 +8,167 @@
     <title>Dynamo Music</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
 </head>
-
-<header>
-    <h1 class="animate__animated animate__bounce">Dynamo MUSIC</h1>
-    <nav>
-        <ul class="menuDos">
-            <li>
-                <a href="../index.html">INICIO</a>
-            </li>
-            <li>
-                <a href="./productos.html">PRODUCTOS</a>
-            </li>
-            <li>
-                <a href="./historia.html">HISTORIA</a>
-            </li>
-            <li>
-                <a href="./servicios.html">SERVICIOS</a>
-            </li>
-            <li>
-                <a href="./contacto.html">CONTACTO</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
 <body>
+    <header>
+        <nav class="cuotas">
+            <div class="container-fluid">
+              <span class="navbar-text">
+                Llévate lo que quieras en cuotas sin interés - 6, 12 y hasta 24 cuotas
+              </span>
+            </div>
+        </nav>
+        <h1 class="animate__animated animate__bounce">Dynamo MUSIC</h1>
+        <nav>
+            <ul class="menuDos">
+                <li>
+                    <a href="../index.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="./productos.html">PRODUCTOS</a>
+                </li>
+                <li>
+                    <a href="./historia.html">HISTORIA</a>
+                </li>
+                <li>
+                    <a href="./servicios.html">SERVICIOS</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
 
     <img src="../images/historia.jpg" class="contact" alt="contacto">
 
     <br><br>
     <section>
-        <article>
-            <form>
-                <label for="nombre_apellido" class="nombreApellido">Nombre y Apellido</label>
-                <input type="text" name="nombre_apellido">
-                <br>
-                <label for="contacto" class="telefono">Teléfono</label>
-                <input type="text" name="contacto">
-                <br>
-                <label for="mail" class="correo">Correo Electronico</label>
-                <input type="text" name="mail">
-                <br>
-                <label for="consulta" class="consulta">Deje aquí su consulta</label>
-                <br>
-                <textarea type="text" name="consulta"></textarea>
-                <input type="checkbox" name="acepta" value="1">
-                <input type="submit" value="Enviar">
-            </form>
-        </article>
+        <form>
 
+            <div class="form-group">
+                <label for="full_name_id" class="control-label">Nombre completo</label>
+                <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="Juan Perez">
+            </div>    
+                           
+                                    
+            <div class="form-group">
+                <label for="email_id" class="control-label">Numero de contacto</label>
+                <input type="text" class="form-control" id="email_id" name="wpp" placeholder="Whatsapp">
+            </div>
+            
+            <div class="form-group">
+                <label for="email_id" class="control-label">Email</label>
+                <input type="text" class="form-control" id="email_id" name="email" placeholder="Email">
+            </div>    
+        
+            <div class="form-group">
+                <label for="ciudad_id" class="control-label">Localidad</label>
+                <input type="text" class="form-control" id="ciudad_id" name="localidad" placeholder="CABA">
+            </div>                                    
+                                    
+            <div class="form-group">
+                <label for="Localidad_id" class="control-label">Provincia</label>
+                <select class="form-control" id="state_id">
+                    <option value="GBA">Gran Buenos Aires</option>
+                    <option value="CABA">CABA</option>
+                    <option value="NQ">Neuquen</option>
+                    <option value="CO">Cordoba</option>
+                    <option value="SF">Santa Fe</option>
+                    <option value="MS">Misiones</option>
+                    <option value="CT">Corrientes</option>
+                    <option value="TC">Tucuman</option>
+                    <option value="JJ">Jujuy</option>
+                    <option value="MZ">Mendoza</option>
+                    <option value="TF">Tierra del Fuego</option>
+                    <option value="RN">Rio Negro</option>
+                    <option value="LP">La Pampa</option>
+                    <option value="ST">Salta</option>
+                    <option value="RS">Rosario</option>
+                    <option value="CT">Chubut</option>
+                    <option value="FS">Formosa</option>
+                    <option value="SJ">San Juan</option>
+                    <option value="UH">Ushuaia</option>
+                    <option value="SE">Santiago del Estero</option>
+                    <option value="SC">Santa Cruz</option>
+                    <option value="SL">San Luis</option>
+                </select>                    
+            </div>
+           
+            
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Enviar!</button>
+            </div>     
+            
+        </form>
     </section>
-    <br>
-    <footer>
-        <p>2022, Ciudad Autonoma de Buenos Aires</p>
-    </footer>
+
+        <footer class="text-white text-center text-lg-start bg-dark">
+
+            <div class="container p-4">
+
+                <div class="row mt-4">
+
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">Sobre nosotros</h5>
+
+                        <p>
+                            Comprá online los mejores instrumentos musicales y equipos de sonido / audio profesional
+                            pagando en
+                            cuotas. Recibilo en tu casa o retiralo por nuestro local. Variedad y calidad de productos, y
+                            la
+                            mejor atención.
+                        </p>
+
+                        <p>
+                            Encontranos en Av Jose Maria Moreno 120, CABA.
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 pb-1">Encontra lo que buscas</h5>
+
+                        <div class="form-outline form-white mb-4">
+                            <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                            <label class="form-label" for="formControlLg">Buscar</label>
+                        </div>
+
+                        <ul class="fa-ul" style="margin-left: 1.65em;">
+                        </ul>
+                    </div>
+
+
+
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">Horarios</h5>
+
+                        <table class="table text-center text-white">
+                            <tbody class="fw-normal">
+                                <tr>
+                                    <td>Lunes - Jueves:</td>
+                                    <td>8am - 8pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Viernes - Sabados:</td>
+                                    <td>8am - 13pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Domingo</td>
+                                    <td>Cerrado</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+
+        </footer>
+    
 
 </body>
 
